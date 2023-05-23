@@ -6,40 +6,44 @@
 }
 
 body {
-    background-color: rgb(31, 66, 72);
-    font-size: 0.5rem;
+    background-color: rgb(16, 65, 74);
+    font-size: 0.7rem;
 }
 
-h1, h2 {
-    font-size: 1.7rem;
+h1 {
+    font-size: 3rem;
     margin-bottom: 10px;
 }
-
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px
+}
 p {
     line-height: 20px;
 }
 
 a {
     border-radius: 20px;
-    padding: 5px 20px;
+    padding: 10px 40px;
     margin: 10px;
     display: inline-block;
+    font-size: 1rem;
 }
 
 section {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 #section1 a:hover, #section2 a:hover{
-    background-color: rgb(31, 66, 72);
+    background-color: rgb(16, 65, 74);
     color: white;
 }
 
 #section1 {
-    height: 350px;
+    height: 50vh;
     background-image: url(assets/images/banner-1.jpg);
     background-size: cover;
     background-position: center;
@@ -53,7 +57,7 @@ section {
 }
 
 #section2 {
-    background-color: rgb(233, 246, 230);
+    background-color: rgb(229, 246, 225);
     text-align: center;
     padding: 8% 20%;
 }
@@ -64,14 +68,14 @@ section {
 }
 
 #section3 {
-    height: 350px;
+    height: 50vh;
     background-image: url(assets/images/banner-2.jpg);
     background-size: cover;
     background-position: center;
 }
 
 footer {
-    background-color:  rgb(31, 66, 72);
+    background-color:  rgb(16, 65, 74);
     color: white;
     text-align: center;
     padding: 1% 10%;
