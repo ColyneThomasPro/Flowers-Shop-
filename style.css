@@ -12,20 +12,20 @@ body {
 
 h1 {
     font-size: 3rem;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 h2 {
     font-size: 2.5rem;
-    margin-bottom: 10px
+    margin-bottom: 30px
 }
 p {
-    line-height: 20px;
+    line-height: 25px;
 }
 
 a {
     border-radius: 20px;
     padding: 10px 40px;
-    margin: 10px;
+    margin-top: 40px;
     display: inline-block;
     font-size: 1rem;
 }
@@ -44,7 +44,8 @@ section {
 
 #section1 {
     height: 50vh;
-    background-image: url(assets/images/banner-1.jpg);
+    background: rgba(0,0,0,0.2) url(assets/images/banner-1.jpg);
+    background-blend-mode: darken;
     background-size: cover;
     background-position: center;
     color: white;
@@ -59,7 +60,7 @@ section {
 #section2 {
     background-color: rgb(229, 246, 225);
     text-align: center;
-    padding: 8% 20%;
+    padding: 10vh 20vw;
 }
 
 #section2 a {
