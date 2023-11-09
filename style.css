@@ -1,28 +1,54 @@
+@font-face {
+    font-family: "Italiana";
+    src: url(./assets/fonts/Italiana/Italiana-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(./assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     font-family: "Roboto";
     text-decoration: none;
+    box-sizing: border-box; 
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: rgb(16, 65, 74);
-    font-size: 0.7rem;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
 }
 
 h1 {
-    font-size: 3rem;
-    margin-bottom: 30px;
-}
-h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px
-}
-p {
-    line-height: 25px;
+    font-size: 7rem;
 }
 
-a {
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.titles {
+    font-family: "Italiana";
+}
+
+.txt {
+    line-height: 25px;
+    font-size: 1.3rem;
+}
+
+.slogan {
+    font-family: "Italiana";
+    font-size: 2rem;
+}
+
+.btn {
     border-radius: 20px;
     padding: 10px 40px;
     margin-top: 40px;
@@ -30,17 +56,36 @@ a {
     font-size: 1rem;
 }
 
-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
+a {
+    transition: all 0.2s ease-in-out; 
 }
 
-#section1 a:hover, #section2 a:hover{
-    background-color: rgb(16, 65, 74);
-    color: white;
+a:hover {
+    color: #ebc1c8c7; 
 }
+
+#section1 .content {
+    opacity: 0;
+    transform: translateY(20px);
+ }
+ 
+ #section1 .content.animate {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeInUp 0.5s ease-in-out;
+ }
+ 
+ @keyframes fadeInUp {
+    from {
+       opacity: 0;
+       transform: translateY(20px);
+    }
+ 
+    to {
+       opacity: 1;
+       transform: translateY(0);
+    }
+ }
 
 #section1 {
     height: 50vh;
@@ -52,19 +97,48 @@ section {
     text-align: center;
 }
 
-#section1 a {
-    background-color: white;
-    color: black;
+#section1 .content {
+    padding: 5vh 20vw;
 }
 
-#section2 {
-    background-color: rgb(229, 246, 225);
+.title-content {
+    margin-bottom: 5vh;
+}
+
+.title-content a {
+    display: flex;
+    justify-content: center;
+}
+
+.title-content a:hover {
+    color: #ebc1c8;
+}
+
+#section1 .icon {
+    width: 15px;
+    margin-right: 5px;
+}
+
+#section1 .black-filter {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.288); 
+    z-index: 1;
+}
+
+#section2, #about-us {
+    background-color: #e5f6e1;
     text-align: center;
     padding: 10vh 20vw;
 }
 
-#section2 a {
+#section2 .btn {
     background-color: black;
+    color: white;
+}
+
+#section2 .btn:hover {
+    background-color: #10414a;
     color: white;
 }
 
@@ -75,9 +149,79 @@ section {
     background-position: center;
 }
 
+.hover-txt {
+    color: transparent;
+    font-size: 2.5rem;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+#section3 .black-filter {
+    height: 100%;
+    width: 100%;
+    background-color: transparent; 
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.2s ease-in-out; 
+}
+
+#section3:hover .black-filter {
+    background-color: #ebc1c8c7; 
+}
+
+
+
+#section3:hover .hover-txt {
+    color: #11434B;
+    padding: 5vh 20vw;
+}
+
+.brand-name {
+    font-family: "Italania";
+    font-style: italic;
+}
+
+.accent-color {
+    color: #d32743;
+}
+
 footer {
-    background-color:  rgb(16, 65, 74);
+    background-color: rgb(16, 65, 74);
     color: white;
     text-align: center;
     padding: 1% 10%;
+    font-size: 0.8rem;
 }
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+    #section1 .txt {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+    }
+}
+ 
+@media only screen and (max-width: 990px) {
+    h1 {
+        font-size: 6rem;
+    }
+
+    #section1 {
+        height: 60vh;
+    }
+
+    #section1 .txt {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+    }
+
+    .hover-txt {
+        color: transparent;
+        font-size: 1.3rem;
+        line-height: 40px;
+        font-weight: 600;
+    }
+}
+
