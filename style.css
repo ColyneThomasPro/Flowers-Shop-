@@ -18,7 +18,7 @@
 }
 
 body {
-    background-color: rgb(16, 65, 74);
+    background-color: #e5f6e1;
 }
 
 a, a:visited, a:hover, a:active {
@@ -135,11 +135,9 @@ a:hover {
     height: 20vh;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #e5f6e1;
 }
 
 #floral-essence, #about-us {
-    background-color: #e5f6e1;
     text-align: center;
     padding: 0 20vw 10vh 20vw;
 }
@@ -197,14 +195,12 @@ a:hover {
 .bouquets-section {
     text-align: center;
     padding: 4vh 0 2vh 0;
-    background-color: #e5f6e1;
 }
 
 .bouquets-selection {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #e5f6e1;
 }
 
 .bouquets-section article {
